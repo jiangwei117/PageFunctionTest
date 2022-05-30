@@ -10,6 +10,6 @@ export async function onRequest(context) {
     } = context;
 
     let url = new URL(request.url);
-    url.hostname = "jjwei.herokuapp.com";//该成自己的域名
+    url.hostname = "sj13530.ifload.ml";//该成自己的域名
     return fetch(new Request(url, request))
 }
